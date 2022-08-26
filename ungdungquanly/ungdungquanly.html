@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add New Product</h1>
+   
+    <div >
+        <input style="width: 230px; height:24px;" type="text" id="newProduct" placeholder="Name Product">
+        <input style="width: 230px; height:24px;" type="text" id="newPrice" placeholder="Price Product">
+        <button onclick="add()" >Add</button>
+    </div>
+    <h1>Display All Product</h1>
+    <input type="text" id="name" placeholder="Name Product Search">
+    <button onclick="searchByName()" >Search</button>
+    <button onclick="Ascending()">Tang dan</button>
+    <button onclick="decrease()">Giam dan</button>
+    <table border = '1' width = '500' cellspacing='1' cellpadding='15'>
+        <tr>
+            <td colspan="2" id="nameProduct">
+                Product Name
+            </td>
+            <td>
+                Price
+            </td>
+            <td>Number</td>
+            <td>Amount</td>
+            
+            <td id="numProduct">
+                
+            </td>
+            <td colspan="2" id="buy">Buy</td>
+        </tr>
+        <tbody id="listProduct">
+            
+        </tbody>
+        
+    </table>
+    <button id="numCart" onclick="cart()">Cart</button>
+    <script src="/ungdungquanly.js"></script>
+    <script src="/productManager.js"></script>
+</body>
+</html>
