@@ -2,7 +2,8 @@ class Product{
     name;
     number;
     price;
-    contructor(name, number, price){
+
+    constructor(name, number, price){
         this.name = name;
         this.number = number;
         this.price = price;

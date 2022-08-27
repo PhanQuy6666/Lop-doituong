@@ -1,5 +1,4 @@
-    let dtcuaban = new Mobile();
-    let dtcuatoi = new Mobile();
+
 function mySent(){
    
     let mess = document.getElementById("mySent").value;

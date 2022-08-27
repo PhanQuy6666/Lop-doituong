@@ -29,4 +29,5 @@ class Mobile{
         this.battery--;
     }
 }
-
+let dtcuaban = new Mobile();
+let dtcuatoi = new Mobile();

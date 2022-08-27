@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Moi nhap thong tin</h1>
+    <table border="1">
+        <tr>
+            <td></td>
+            <td>Name</td>
+            <td>Mass</td>
+            <td>Speed</td>
+            <td>Status</td>
+        </tr>
+        <tr>
+            <td>Cat</td>
+            <td><input type="text" id="nameCat"></td>
+            <td><input type="text" id="massCat"></td>
+            <td><input type="text" id="speedCat"></td>
+            <td><p id="massEat"></p></td>
+            
+        </tr>
+        <tr>
+            <td>Rat</td>
+            <td><input type="text" id="nameRat"></td>
+            <td><input type="text" id="massRat"></td>
+            <td><input type="text" id="speedRat"></td>
+            <td>
+                <select name="" id="statusRat">
+                    <option value="die">Die</option>
+                    <option value="live">Live</option>
+                </select>
+            </td>
+            
+        </tr>
+
+    </table>
+    <button onclick="confirm()">Xac nhan</button>
+    <button onclick="killRat()">Bat chuot</button>
+    <button onclick="eatRat()">An chuot</button>
+    <script src="/meochuot/index.js"></script>
+</body>
+</html>
