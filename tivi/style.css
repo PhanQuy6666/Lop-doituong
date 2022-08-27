@@ -1,0 +1,45 @@
+#television{
+    width: 1280px;
+    height: 720px;
+    background-color: blueviolet;
+    margin: 0 auto;
+    position: relative;
+}
+#volume{
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+#channel{
+    display: inline;
+    padding-left: 10px;
+    
+    
+}
+#remote{
+    width: 150px;
+    height: 180px;
+    background-color: gold;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+}
+#remote{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#on{
+    font-size: 25px;
+    grid-column: 1/span 3;
+}
+#off{
+    font-size: 25px;
+}
+#agument{
+    font-size: 15px;
+    grid-column: 1/span 2;
+}
+#abatement {
+    font-size: 15px;
+}

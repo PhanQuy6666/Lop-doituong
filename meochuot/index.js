@@ -63,28 +63,33 @@ class Cat{
         let speedRat = rat.speed;
         let speedCat = this.maxSpeed;
         let statusRat = rat.status;
-        if (speedCat > speedRat){
+     
             if (statusRat == "live"){
+                if (speedCat > speedRat){
                 this.mass++;
                 document.getElementById("massEat").innerHTML = "Khoi luong sau khi an : " + this.mass;
                 alert("Thit chuot ngon qua");
+                }
+                else{
+                    alert("Co bat duoc dau ma doi an")
+                }
             }
             else{
                 alert("Khong them an");
             }
             
-        }
-        else{
-            alert("Co bat duoc dau ma doi an")
-        }
+        
+       
         
        
         return;
 
     }
 }
+let myCat;
+let yourRat;
 
-function confirm(){
+function InitInfo(){
     let nameCat = document.getElementById("nameCat").value;
     let massCat = document.getElementById("massCat").value;
     let speedCat = document.getElementById("speedCat").value;
@@ -94,14 +99,19 @@ function confirm(){
     let speedRat = document.getElementById("speedRat").value;
     let statusRat = document.getElementById("statusRat").value;
 
-    let myCat = new Cat(nameCat, massCat, speedCat);
+     myCat = new Cat(nameCat, massCat, speedCat);
     
-    let yourRat = new Rat(nameRat, massRat, speedRat, statusRat);
+     yourRat = new Rat(nameRat, massRat, speedRat, statusRat);
+//     return [myCat,yourRat]
+}
+InitInfo();
+function confirm(){
+//    const [myCat,yourRat]=InitInfo()
     
     
-    myCat.getSound();
-    yourRat.getSound();
-    return myCat;
+   myCat.getSound();
+   yourRat.getSound();
+    
    
     
     
@@ -109,35 +119,35 @@ function confirm(){
 
 
 function killRat(){
-    let nameCat = document.getElementById("nameCat").value;
-    let massCat = document.getElementById("massCat").value;
-    let speedCat = document.getElementById("speedCat").value;
+    // let nameCat = document.getElementById("nameCat").value;
+    // let massCat = document.getElementById("massCat").value;
+    // let speedCat = document.getElementById("speedCat").value;
 
-    let nameRat = document.getElementById("nameRat").value;
-    let massRat = document.getElementById("massRat").value;
-    let speedRat = document.getElementById("speedRat").value;
-    let statusRat = document.getElementById("statusRat").value;
+    // let nameRat = document.getElementById("nameRat").value;
+    // let massRat = document.getElementById("massRat").value;
+    // let speedRat = document.getElementById("speedRat").value;
+    // let statusRat = document.getElementById("statusRat").value;
 
-    let myCat = new Cat(nameCat, massCat, speedCat);
+    // let myCat = new Cat(nameCat, massCat, speedCat);
     
-    let yourRat = new Rat(nameRat, massRat, speedRat, statusRat);
-    
+    // let yourRat = new Rat(nameRat, massRat, speedRat, statusRat);
+    // const [myCat,yourRat]=InitInfo()
     
     myCat.getKill(yourRat);
 }
 function eatRat(){
-    let nameCat = document.getElementById("nameCat").value;
-    let massCat = document.getElementById("massCat").value;
-    let speedCat = document.getElementById("speedCat").value;
+    // let nameCat = document.getElementById("nameCat").value;
+    // let massCat = document.getElementById("massCat").value;
+    // let speedCat = document.getElementById("speedCat").value;
 
-    let nameRat = document.getElementById("nameRat").value;
-    let massRat = document.getElementById("massRat").value;
-    let speedRat = document.getElementById("speedRat").value;
-    let statusRat = document.getElementById("statusRat").value;
+    // let nameRat = document.getElementById("nameRat").value;
+    // let massRat = document.getElementById("massRat").value;
+    // let speedRat = document.getElementById("speedRat").value;
+    // let statusRat = document.getElementById("statusRat").value;
 
-    let myCat = new Cat(nameCat, massCat, speedCat);
+    // let myCat = new Cat(nameCat, massCat, speedCat);
     
-    let yourRat = new Rat(nameRat, massRat, speedRat, statusRat);
+    // let yourRat = new Rat(nameRat, massRat, speedRat, statusRat);
     massCat++;
     
     
